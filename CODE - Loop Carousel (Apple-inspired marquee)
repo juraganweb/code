@@ -1,0 +1,39 @@
+
+Code for the frosted glass effect (button)
+
+selector .elementor-button-wrapper .elementor-button {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 25px);
+    -webkit-backdrop-filter: blur( 25px);
+}
+
+Code for the infinite looping effect
+
+selector .swiper-wrapper {
+      -webkit-transition-timing-function: linear !important;
+      -moz-transition-timing-function: linear !important;
+      -o-transition-timing-function: linear !important;
+      transition-timing-function: linear !important; 
+}
+
+
+Code for the button animation on hover
+
+selector .show {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+selector:hover .show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 768px) {
+  selector .show {
+    opacity: 1;  
+  }
+}
+
